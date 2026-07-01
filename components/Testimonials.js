@@ -18,7 +18,7 @@ const TESTIMONIALS = [
   },
   {
     name: 'Tiago Nascimento',
-    role: 'CEO, Don Edu - Delícias sem glutén',
+    role: 'CEO, Don Edu - Delícias sem glúten',
     text: `A Ludo, mais propriamente falando da Luiza, entrou para cuidar da nossa gestão financeira, ganhamos muito mais do que uma prestadora de serviços. Ganhamos organização, clareza e tranquilidade para tomar decisões.
           Ter alguém que olha para os números com responsabilidade, estratégia e comprometimento faz toda a diferença no dia a dia de uma empresa. Hoje conseguimos enxergar melhor nossos resultados, planejar com mais segurança e direcionar nossos esforços para aquilo que realmente importa: fazer o nosso negócio crescer.
           A Luiza conduz tudo com muita competência, atenção aos detalhes e profissionalismo, sempre disposta a orientar e encontrar as melhores soluções. É o tipo de parceria que gera confiança e nos permite focar na operação, sabendo que a parte financeira está em excelentes mãos.
