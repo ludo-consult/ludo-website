@@ -2,17 +2,19 @@ import styled from 'styled-components'
 import { FiStar } from 'react-icons/fi'
 
 const TESTIMONIALS = [
-  {
-    name: 'Carlos Mendes',
-    role: 'CEO, TechSolutions Ltda',
-    text: 'A LUDO transformou a saúde financeira da nossa empresa. Em apenas seis meses, conseguimos reduzir custos operacionais em 25% e aumentar nossa margem de lucro significativamente. Profissionalismo e competência acima da média.',
-    rating: 5,
-  },
+  // {
+  //   name: 'Carlos Mendes',
+  //   role: 'CEO, TechSolutions Ltda',
+  //   text: 'A LUDO transformou a saúde financeira da nossa empresa. Em apenas seis meses, conseguimos reduzir custos operacionais em 25% e aumentar nossa margem de lucro significativamente. Profissionalismo e competência acima da média.',
+  //   rating: 5,
+  //   avatar: '/carlos-mendes.jpg',
+  // },
   {
     name: 'Jessica Martins',
     role: 'CEO, People Academy',
     text: 'Encontrar a Lu foi um grande presente. Ainda não havia tido uma pessoa que cuidasse desta forma das finanças do negócio e eu não tinha dimensão do quão libertador seria poder confiar essa rotina a alguém. Como empreendedora, tenho múltiplos papéis e poder ter uma empresa que seja parceira é muito importante para nos dar tranquilidade. Indico de olhos fechados. Nunca tivemos nenhum problema, pelo contrário, ela me traz frequentemente, soluções para os meus desafios.',
     rating: 5,
+    avatar: '/jessica-martins.jpeg',
   },
   {
     name: 'Tiago Nascimento',
@@ -22,6 +24,7 @@ const TESTIMONIALS = [
           A Luiza conduz tudo com muita competência, atenção aos detalhes e profissionalismo, sempre disposta a orientar e encontrar as melhores soluções. É o tipo de parceria que gera confiança e nos permite focar na operação, sabendo que a parte financeira está em excelentes mãos.
           Somos muito gratos por essa caminhada ao lado da Ludo. Sem dúvida, foi uma das melhores decisões que tomamos para fortalecer a gestão da nossa empresa. Recomendo de olhos fechados para qualquer empresário que queira ter mais controle, organização e segurança financeira.`,
     rating: 5,
+    avatar: '/tiago-nascimento.jpeg',
   },
 ]
 
@@ -49,12 +52,14 @@ export default function Testimonials() {
         </Header>
 
         <Grid>
-          {TESTIMONIALS.map(({ name, role, text, rating }) => (
+          {TESTIMONIALS.map(({ name, role, text, rating, avatar }) => (
             <Card key={name}>
               <Stars count={rating} />
               <Quote>&ldquo;{text}&rdquo;</Quote>
               <AuthorInfo>
-                <Avatar>{name.charAt(0)}</Avatar>
+                <Avatar>
+                  {avatar ? <Img src={avatar} alt={name} /> : name.charAt(0)}
+                </Avatar>
                 <div>
                   <Name>{name}</Name>
                   <Role>{role}</Role>
@@ -118,13 +123,11 @@ const Description = styled.p`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
   }
 `
 
@@ -174,6 +177,13 @@ const Avatar = styled.div`
   font-weight: 700;
   font-size: 1.2rem;
   flex-shrink: 0;
+  overflow: hidden;
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 
 const Name = styled.p`

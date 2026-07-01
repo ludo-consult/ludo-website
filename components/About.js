@@ -20,10 +20,22 @@ const ITEMS = [
 ]
 
 const DIFFERENTIALS = [
-  'Análise financeira completa e personalizada',
-  'Redução comprovada de custos operacionais',
-  'Planejamento tributário estratégico',
-  'Relatórios gerenciais em tempo real',
+  {
+    title: 'Foco no seu Core Business',
+    text: 'Deixe a burocracia financeira conosco e ganhe tempo para focar na estratégia e na operação da sua empresa.',
+  },
+  {
+    title: 'Segurança e Organização',
+    text: 'Processos padronizados e estruturados com as melhores práticas e ferramentas do mercado.',
+  },
+  {
+    title: 'Visão Estratégica',
+    text: 'Relatórios e indicadores claros que funcionam como uma verdadeira bússola para o seu crescimento.',
+  },
+  {
+    title: 'Praticidade',
+    text: 'Uma equipe de especialistas cuidando do seu financeiro, sem os custos de uma contratação interna.',
+  },
 ]
 
 export default function About() {
@@ -54,8 +66,11 @@ export default function About() {
         <DifferentialsSection>
           <DiffTitle>Por que escolher a nossa solução?</DiffTitle>
           <DiffGrid>
-            {DIFFERENTIALS.map((diff) => (
-              <DiffCard key={diff}>{diff}</DiffCard>
+            {DIFFERENTIALS.map(({ title, text }) => (
+              <DiffCard key={title}>
+                <DiffCardTitle>{title}</DiffCardTitle>
+                <DiffCardText>{text}</DiffCardText>
+              </DiffCard>
             ))}
           </DiffGrid>
         </DifferentialsSection>
@@ -191,15 +206,25 @@ const DiffCard = styled.div`
   padding: 1.5rem;
   background: #FFFFFF;
   border-radius: 12px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #245d70;
   border-left: 4px solid #e7c37a;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  text-align: center;
 
   &:hover {
     transform: scale(1.05);
   }
+`
+
+const DiffCardTitle = styled.h4`
+  font-size: 1rem;
+  font-weight: 700;
+  color: #245d70;
+  margin-bottom: 0.5rem;
+`
+
+const DiffCardText = styled.p`
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
 `
