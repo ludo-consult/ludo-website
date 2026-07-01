@@ -2,7 +2,7 @@ import StyledComponentsRegistry from '@/lib/registry'
 import GlobalStyles from '@/styles/GlobalStyles'
 
 export const metadata = {
-  title: 'LUDO Consultoria - Gestão Financeira Inteligente',
+  title: 'LUDO Consultoria Especializada',
   description:
     'Consultoria especializada em gestão financeira empresarial. Soluções em planejamento financeiro, redução de custos e otimização de resultados.',
 }
