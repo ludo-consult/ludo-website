@@ -46,7 +46,7 @@ export default function About() {
           <Tag>Sobre Nós</Tag>
           <Title>Conheça a LUDO</Title>
           <Description>
-            Desde 2021, somos uma empresa especializada em terceirização financeira (BPO Financeiro), dedicada a organizar, estruturar e otimizar a gestão financeira de negócios de forma prática, segura e estratégica.
+            Somos uma empresa especializada em terceirização financeira (BPO Financeiro), dedicada a organizar, estruturar e otimizar a gestão financeira de negócios de forma prática, segura e estratégica.
             <br />
             <br />
             Assumimos toda a rotina operacional da sua empresa para que você possa focar no que realmente importa: o crescimento do seu negócio. Mais do que executar tarefas, nós transformamos dados brutos em informações confiáveis e inteligência de mercado, gerando clareza para tomadas de decisão mais assertivas e lucrativas.
