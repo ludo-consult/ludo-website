@@ -5,17 +5,17 @@ const ITEMS = [
   {
     icon: <FiTarget size={32} />,
     title: 'Missão',
-    text: 'Oferecer consultoria financeira de excelência, capacitando empresas a alcançarem estabilidade e crescimento sustentável por meio de estratégias inovadoras e personalizadas.',
+    text: 'Descomplicar a gestão financeira de forma inteligente, entregando a tranquilidade e a previsibilidade que os empreendedores precisam para prosperar.',
   },
   {
     icon: <FiEye size={32} />,
     title: 'Visão',
-    text: 'Ser referência nacional em consultoria de gestão financeira, reconhecida pela qualidade dos serviços e pelo impacto positivo nos resultados dos nossos clientes.',
+    text: 'Ser referência nacional em serviços de gestão financeira, reconhecida pela qualidade e pelo impacto positivo nos resultados dos nossos clientes.',
   },
   {
     icon: <FiHeart size={32} />,
     title: 'Valores',
-    text: 'Ética, transparência, compromisso com resultados, inovação constante e parceria genuína com cada cliente, tratando cada desafio como nosso.',
+    text: 'Ética, transparência, compromisso com resultados e parceria genuína com cada cliente, tratando cada desafio como nosso.',
   },
 ]
 
@@ -32,12 +32,12 @@ export default function About() {
       <Container>
         <Header>
           <Tag>Sobre Nós</Tag>
-          <Title>Conheça a LUDO Consultoria</Title>
+          <Title>Conheça a LUDO</Title>
           <Description>
-            Somos uma equipe de especialistas apaixonados por finanças empresariais.
-            Há mais de 10 anos ajudamos empresas de todos os portes a organizar suas
-            finanças, reduzir custos e maximizar resultados com soluções inteligentes
-            e personalizadas.
+            Desde 2021, somos uma empresa especializada em terceirização financeira (BPO Financeiro), dedicada a organizar, estruturar e otimizar a gestão financeira de negócios de forma prática, segura e estratégica.
+            <br />
+            <br />
+            Assumimos toda a rotina operacional da sua empresa para que você possa focar no que realmente importa: o crescimento do seu negócio. Mais do que executar tarefas, nós transformamos dados brutos em informações confiáveis e inteligência de mercado, gerando clareza para tomadas de decisão mais assertivas e lucrativas.
           </Description>
         </Header>
 
@@ -52,7 +52,7 @@ export default function About() {
         </Grid>
 
         <DifferentialsSection>
-          <DiffTitle>Nossos Diferenciais</DiffTitle>
+          <DiffTitle>Por que escolher a nossa solução?</DiffTitle>
           <DiffGrid>
             {DIFFERENTIALS.map((diff) => (
               <DiffCard key={diff}>{diff}</DiffCard>

@@ -136,7 +136,7 @@ const NavLink = styled.a`
   }
 
   &:hover {
-    color: #14333d;
+    color: #5894a8;
   }
 
   &:hover::after {
