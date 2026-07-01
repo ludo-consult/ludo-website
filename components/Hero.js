@@ -75,6 +75,7 @@ const Title = styled.h1`
   color: #FFFFFF;
   line-height: 1.2;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 
   @media (max-width: 768px) {
     font-size: 2.2rem;
