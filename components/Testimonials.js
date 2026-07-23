@@ -12,14 +12,14 @@ const TESTIMONIALS = [
   {
     name: 'Jessica Martins',
     role: 'CEO, People Academy',
-    text: 'Encontrar a Lu foi um grande presente. Ainda não havia tido uma pessoa que cuidasse desta forma das finanças do negócio e eu não tinha dimensão do quão libertador seria poder confiar essa rotina a alguém. Como empreendedora, tenho múltiplos papéis e poder ter uma empresa que seja parceira é muito importante para nos dar tranquilidade. Indico de olhos fechados. Nunca tivemos nenhum problema, pelo contrário, ela me traz frequentemente, soluções para os meus desafios.',
+    text: 'Encontrar a LUDO foi um grande presente. Ainda não havia tido uma pessoa que cuidasse desta forma das finanças do negócio e eu não tinha dimensão do quão libertador seria poder confiar essa rotina a alguém. Como empreendedora, tenho múltiplos papéis e poder ter uma empresa que seja parceira é muito importante para nos dar tranquilidade. Indico de olhos fechados. Nunca tivemos nenhum problema, pelo contrário, ela me traz frequentemente, soluções para os meus desafios.',
     rating: 5,
     avatar: '/jessica-martins.jpeg',
   },
   {
     name: 'Tiago Nascimento',
     role: 'CEO, Don Edu - Delícias sem glúten',
-    text: `A Ludo, mais propriamente falando da Luiza, entrou para cuidar da nossa gestão financeira, ganhamos muito mais do que uma prestadora de serviços. Ganhamos organização, clareza e tranquilidade para tomar decisões.
+    text: `A LUDO, entrou para cuidar da nossa gestão financeira, ganhamos muito mais do que uma prestadora de serviços. Ganhamos organização, clareza e tranquilidade para tomar decisões.
           Ter alguém que olha para os números com responsabilidade, estratégia e comprometimento faz toda a diferença no dia a dia de uma empresa. Hoje conseguimos enxergar melhor nossos resultados, planejar com mais segurança e direcionar nossos esforços para aquilo que realmente importa: fazer o nosso negócio crescer.
           A Luiza conduz tudo com muita competência, atenção aos detalhes e profissionalismo, sempre disposta a orientar e encontrar as melhores soluções. É o tipo de parceria que gera confiança e nos permite focar na operação, sabendo que a parte financeira está em excelentes mãos.
           Somos muito gratos por essa caminhada ao lado da Ludo. Sem dúvida, foi uma das melhores decisões que tomamos para fortalecer a gestão da nossa empresa. Recomendo de olhos fechados para qualquer empresário que queira ter mais controle, organização e segurança financeira.`,

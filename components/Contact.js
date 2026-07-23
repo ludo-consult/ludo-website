@@ -134,7 +134,7 @@ export default function Contact() {
                 </InfoIcon>
                 <div>
                   <InfoLabel>E-mail</InfoLabel>
-                  <InfoValue>contato.ludoconsultoria@gmail.com</InfoValue>
+                  <InfoValue>contato@consultorialudo.com.br</InfoValue>
                 </div>
               </InfoItem>
               <InfoItem>
