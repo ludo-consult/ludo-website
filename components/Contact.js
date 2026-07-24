@@ -8,6 +8,17 @@ import { FaWhatsapp } from 'react-icons/fa'
 const WHATSAPP_NUMBER = '5547997262990'
 const INITIAL_STATE = { nome: '', email: '', telefone: '', mensagem: '' }
 
+function formatPhone(value) {
+  const digits = value.replace(/\D/g, '').slice(0, 11)
+  if (digits.length <= 2) {
+    return digits.length ? `(${digits}` : ''
+  }
+  if (digits.length <= 7) {
+    return `(${digits.slice(0, 2)}) ${digits.slice(2)}`
+  }
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)} ${digits.slice(7)}`
+}
+
 export default function Contact() {
   const [form, setForm] = useState(INITIAL_STATE)
   const [submitted, setSubmitted] = useState(false)
@@ -15,7 +26,12 @@ export default function Contact() {
   const [error, setError] = useState(false)
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
+    const { name, value } = e.target
+    if (name === 'telefone') {
+      setForm({ ...form, telefone: formatPhone(value) })
+    } else {
+      setForm({ ...form, [name]: value })
+    }
   }
 
   const handleSubmit = async (e) => {
